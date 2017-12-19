@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewCtrl"
+            type="com.zafu.jason.permissiondemo.viewctrl.MainActCtrl" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Permission"
+            android:onClick="@{(view) -> viewCtrl.resetPM(view)}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rxjava"
+            android:onClick="@{()->viewCtrl.rxjavaTest()}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rxjavaThread"
+            android:onClick="@{() -> viewCtrl.rxJavaThread()}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ThreadTest"
+            android:onClick="@{(view) -> viewCtrl.onClickBaseProvider(view)}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ThreadTest"
+            android:onClick="@{(view) -> viewCtrl.onClickLooperTest(view)}"/>
+        <TextView
+            android:id="@+id/wtf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+    </LinearLayout>
+</layout>
