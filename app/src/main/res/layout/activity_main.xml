@@ -13,35 +13,47 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reset Permission"
-            android:onClick="@{(view) -> viewCtrl.resetPM(view)}"/>
+            android:onClick="@{(view) -> viewCtrl.resetPM(view)}"
+            android:text="Reset Permission" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="rxjava"
-            android:onClick="@{()->viewCtrl.rxjavaTest()}"/>
+            android:onClick="@{()->viewCtrl.rxjavaTest()}"
+            android:text="rxjava" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="rxjavaThread"
-            android:onClick="@{() -> viewCtrl.rxJavaThread()}"/>
+            android:onClick="@{() -> viewCtrl.rxJavaThread()}"
+            android:text="rxjavaThread" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ThreadTest"
-            android:onClick="@{(view) -> viewCtrl.onClickBaseProvider(view)}"/>
+            android:onClick="@{(view) -> viewCtrl.onClickBaseProvider(view)}"
+            android:text="ThreadTest" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ThreadTest"
-            android:onClick="@{(view) -> viewCtrl.onClickLooperTest(view)}"/>
+            android:onClick="@{(view) -> viewCtrl.onClickLooperTest(view)}"
+            android:text="ThreadTest" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view) -> viewCtrl.onClickActOkhttp(view)}"
+            android:text="OkhttpDemo" />
+
         <TextView
             android:id="@+id/wtf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"/>
+            android:gravity="center" />
     </LinearLayout>
 </layout>

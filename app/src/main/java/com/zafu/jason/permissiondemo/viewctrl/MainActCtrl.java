@@ -1,6 +1,7 @@
 package com.zafu.jason.permissiondemo.viewctrl;
 
 import android.Manifest;
+import android.content.Intent;
 import android.databinding.ObservableField;
 import android.os.Handler;
 import android.os.Looper;
@@ -9,8 +10,10 @@ import android.view.View;
 
 import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.zafu.jason.permissiondemo.MainAct;
+import com.zafu.jason.permissiondemo.common.AndroidUtil;
 import com.zafu.jason.permissiondemo.common.PermissionsUtil;
 import com.zafu.jason.permissiondemo.databinding.ActivityMainBinding;
+import com.zafu.jason.permissiondemo.ui.OkhttpDemoAct;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -166,5 +169,10 @@ public class MainActCtrl {
     public void onClickLooperTest(View view) {
         Log.i("LooperTest", Looper.myLooper().getThread().getName());
         looper.quit();
+    }
+
+    public void onClickActOkhttp(View view) {
+        Intent intent = new Intent(AndroidUtil.getActivity(view), OkhttpDemoAct.class);
+        AndroidUtil.getActivity(view).startActivity(intent);
     }
 }

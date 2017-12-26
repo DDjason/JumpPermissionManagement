@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewCtrl"
+            type="com.zafu.jason.permissiondemo.viewctrl.OkhttpDemoCtrl" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+    <!--<com.zafu.jason.permissiondemo.common.ObservableScrollView
+        android:id="@+id/swipe_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/top_header"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/awesome_android" />
+
+            <ImageView
+                android:id="@+id/bottom_footer"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_below="@id/top_header"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/awesome_android" />
+
+            <Button
+
+                android:id="@+id/fload_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{(view) -> viewCtrl.onclickConnect(view)}"
+                android:text="连接" />
+            &lt;!&ndash;android:layout_below="@id/top_header"&ndash;&gt;
+
+        </RelativeLayout>
+    </com.zafu.jason.permissiondemo.common.ObservableScrollView>-->
+</layout>
