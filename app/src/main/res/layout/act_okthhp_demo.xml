@@ -8,12 +8,32 @@
             name="viewCtrl"
             type="com.zafu.jason.permissiondemo.viewctrl.OkhttpDemoCtrl" />
     </data>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+        </android.support.design.widget.CoordinatorLayout>
 
+        <Button
+
+            android:id="@+id/fload_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view) -> viewCtrl.onclickConnect(view)}"
+            android:text="连接" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            app:inputFilter="@{5}"
+            android:text="@={viewCtrl.viewModel.textSubmit}" />
     </LinearLayout>
     <!--<com.zafu.jason.permissiondemo.common.ObservableScrollView
         android:id="@+id/swipe_target"
